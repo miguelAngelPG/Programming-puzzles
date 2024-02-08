@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "scripts": {
     "test": "jest",
-    "start": "ts-node src/index.ts"
+    "start": "ts-node src/index.ts",
+    "test:invertString": "jest ./test/invertString.test.ts"
   },
   "devDependencies": {
     "@types/jest": "^29.5.11",
