@@ -1,4 +1,4 @@
-import { invertString, invertWords, invertVowels, invertConsonants, findPalindromeWord } from '../src/invertString';
+import { invertString, invertWords, invertVowels, invertConsonants, findPalindromeWord, invertWordsInParentheses } from '../src/invertString';
 
 describe("Invert Words", () => {
 
@@ -99,3 +99,25 @@ describe("Find a Palindrome Word", () => {
     })
     
 })
+
+describe("Invert Words in Parentheses", () => {
+
+    it("should return the words of the sentence inverted", () => {
+        expect(invertWordsInParentheses("¿Hola (como) (estas)?")).toBe("¿Hola omoc satse?");
+    })
+
+    // it("should return the words of the sentence inverted", () => {
+    //     expect(invertWordsInParentheses("¿H(ol)a (como) estas, (espero (que) bien)?")).toBe("¿Hloa omoc estas, neib que orepse?");
+    //                                     // ¿Hloa omoc estas, (espero (que) bien)?
+    //                                     // ¿Hloa omoc estas, neib que orepse?
+    // })
+
+    it("should return message that parentheses not found", () => {
+        expect(invertWordsInParentheses("Espero que este mensaje le encuentre bien")).toBe("No parentheses were found");
+    })
+
+    it("should return a message that is a string emty", () => {
+        expect(invertWordsInParentheses("")).toBe("Empty strings are not allowed");
+    })
+})
+
