@@ -5,7 +5,9 @@
   "scripts": {
     "test": "jest",
     "start": "ts-node src/index.ts",
-    "test:invertString": "jest ./test/invertString.test.ts"
+    "test:invertString": "jest ./test/invertString.test.ts",
+    "test:fibonacci": "jest ./test/fibonacci.test.ts",
+    "test:figures": "jest ./test/figures.test.ts"
   },
   "devDependencies": {
     "@types/jest": "^29.5.11",
