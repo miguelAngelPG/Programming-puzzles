@@ -1,5 +1,5 @@
 /*
-    Puzzle 1
+    *Puzzle 1
     Inver words: Write a function that takes a string as input and returns it with the words inverted.
         -If the string is empty return a message stating that empty strings are not allowed
         

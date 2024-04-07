@@ -16,9 +16,6 @@ describe("Invert a String", () => {
 
     it("should return the inverted string", () => {
         expect(invertString("hello")).toBe("olleh");
-    })
-
-    it("should return the inverted string", () => {
         expect(invertString("world")).toBe("dlrow");
     })
 
@@ -32,9 +29,6 @@ describe("Invert Vowels", () => {
 
     it("should return the inverted vowels", () => {
         expect(invertVowels("hello")).toBe("holle");
-    })
-
-    it("should return the inverted vowels", () => {
         expect(invertVowels("¿Hola como estas?")).toBe("¿Hale como astos?");
         // ?satse omoc aloH¿
         // ¿Hola como estas?
@@ -58,12 +52,8 @@ describe("Invert Consonants", () => {
 
     it("should return the inverted consonants", () => {
         expect(invertConsonants("hello")).toBe("lelho");
-    })
-
-    it("should return the inverted consonants", () => {
         expect(invertConsonants("¿Hola como estas?")).toBe("¿sota somo eclaH?");
         // ?satse omoc aloH¿
-        // ¿sota somo eclaH?
     })
 
     it("should return message that is a string emty", () => {
@@ -84,9 +74,6 @@ describe("Find a Palindrome Word", () => {
 
     it("should return the first palindrome word found", () => {
         expect(findPalindromeWord("la Ana lava la tina")).toBe("Ana".toLowerCase());
-    })
-
-    it("should return the first palindrome word found", () => {
         expect(findPalindromeWord("El oso lava la tina y el tino se asusto")).toBe("oso".toLowerCase());
     })
 
